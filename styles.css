@@ -4,6 +4,7 @@ body {
     margin: 0;
     padding: 0;
     background-color: #f4f4f4;
+    color: #333;
 }
 
 .container {
@@ -29,6 +30,7 @@ header h1 {
 nav ul {
     list-style-type: none;
     padding: 0;
+    text-align: center;
 }
 
 nav ul li {
@@ -56,10 +58,14 @@ nav ul li a:hover {
     border-radius: 5px;
     transition: background-color 0.3s ease;
     cursor: pointer;
+    display: inline-block;
+    margin-top: 20px;
 }
 
 .btn:hover {
     background-color: #e84a5f; /* Darker coral pink on hover */
+    transform: translateY(-2px);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
 
 /* Footer styles */
@@ -73,11 +79,29 @@ footer {
 /* Page transition animation */
 .page {
     opacity: 0;
-    transform: translateY(-20px);
+    transform: translateY(20px);
     transition: opacity 0.5s ease, transform 0.5s ease;
 }
 
 .page.active {
     opacity: 1;
     transform: translateY(0);
+}
+
+/* Custom section styles */
+.section-title {
+    background-color: #4a4e69;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 24px;
+    letter-spacing: 2px;
+}
+
+.section-content {
+    background-color: white;
+    padding: 20px;
+    margin-bottom: 20px;
 }
